@@ -8,7 +8,7 @@ a { color: #ccc; font-weight: bold; text-decoration: none; }
 a:hover { color: #a8332f; }
 /* 960 grid system container background
 ----------------------------------------------- */
-.container_12, .container_16 { background: #fff; overflow: hidden; }
+.container_12, .container_16 { background: #fff; overflow: hidden; margin-left: 0px;}
 /* headings
 ----------------------------------------------- */
 h1, h2, h3, h4, h5, h6 { line-height: 1.2em; margin-bottom: .3em; }
@@ -160,7 +160,8 @@ input.search.button { width: 28%; margin-left: 2%; }
 #footer { background: url("/static/front/img/whiteFooter.png") repeat-x scroll 0 0 #222; color: #FFFFFF; font-size: 15px; height: 200px; margin-bottom: -40px; }
 #content { margin: 20px 0px;; text-align: center; overflow: hidden; font-size: 1.1em; }
 #title { height: 141px; margin: 20px auto; }
-#title h1 { font-size: 6em }
+#title h1 { font-size: 5em; margin:-30px;}
+#title .title-link { margin-left: -10px; background-color: #222;}
 #menu { margin: -42px 0 0 0 }
 #menu li { list-style:none; float: left; margin: 5px 100px 5px 0px; font-size:1.5em; }
 #page { margin: 100px 0; }
@@ -168,7 +169,7 @@ input.search.button { width: 28%; margin-left: 2%; }
 .aside { }
 .aside h1 { margin: 5px 5px 10px 0 }
 .aside a:hover { color: #a8332f; }
-#sidebar { text-align: center; margin: 140px 0px; }
+#sidebar { padding-left: 80px; text-align: center; margin: 160px 0px 80px 0px; background-color: #111;}
 #player { background-color: transparent; height: 100px; margin: 15px 0; width: 200px; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; }
 #links li { margin: 5px 0 }
 #newsletter { margin-top: 30px 0; }
@@ -176,13 +177,13 @@ input.search.button { width: 28%; margin-left: 2%; }
 #newsletter button { display: inline; width: 150px; margin: 10px 0px;}
 #guestbook_form { display: none; margin: 10px auto; width: 200px; }
 #guestbook_link { margin: 10px auto; }
-#agenda { margin: 20px 0px;  }
+#agenda { margin: 10px 0px;  }
 .page-agenda ul { float: left; }
 .page-agenda .agenda .title, .agenda .date { font-size:1.4em; color: #222; text-align:left;}
 .page-agenda .place {float: left; }
 .page-agenda .place a { font-size: 2em;}
 .agenda li {list-style:none;  margin: 10px 0; text-align: center; }
-.agenda h1 { text-align: center; }
+.agenda h1 { text-align: center; color: #a8332f; }
 .agenda .place { }
 .agenda .title, .agenda .date { text-align: center; font-size:1.4em; margin:10px 0; color: #222;}
 .agenda .all { }
@@ -218,7 +219,7 @@ input.search.button { width: 28%; margin-left: 2%; }
 #guestbook { margin: 0 auto; width: 500px; }
 #guestbook div { margin: 20px 0 }
 /* generic classes */
-.small { }
+.small { margin: 15px 0px;}
 .block { display: block }
 #band-name { font-size: 6em; /* text-align: center; */ color: white;}
 #player-header {float: right; margin-top: -25px;}
