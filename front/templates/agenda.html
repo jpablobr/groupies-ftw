@@ -1,9 +1,13 @@
-<ul class="agenda">
-{{#agenda}}
+<div class="page-agenda">
+  <ul class="agenda">
+    {{#agenda}}
 	<li>
-		<div class="place"><a href="#">{{place}}</a></div>
-		<div class="title">{{title}}</div>
-		<div class="date">{{date}}</div>
+      <div class="place"><a href="#">{{place}}</a></div>
+      <div class="clear"></div>
+      <div class="title"> <p>{{title}}</p> </div>
+      <div class="clear"></div>
+      <div class="date"> <p>{{date}}</p></div>
 	</li>
-{{/agenda}}
-</ul>
+    {{/agenda}}
+  </ul>
+</div>
