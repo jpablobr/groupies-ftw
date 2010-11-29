@@ -160,16 +160,18 @@ input.search.button { width: 28%; margin-left: 2%; }
 #footer { background: url("/static/front/img/whiteFooter.png") repeat-x scroll 0 0 #222; color: #FFFFFF; font-size: 15px; height: 200px; margin-bottom: -40px; }
 #content { margin: 20px 0px;; text-align: center; overflow: hidden; font-size: 1.1em; }
 #title { height: 141px; margin: 20px auto; }
-#title h1 { font-size: 5em; margin:-30px;}
+/* #title h1 { font-size: 4em; margin:-30px;} */
+#title h1 { background:none repeat scroll 0 0 #222222; color:#A8332F; float:left; font-size:3em; margin:0px; padding:5px; position:fixed; right:0; top:210px; letter-spacing: 5px;}
 #title .title-link { margin-left: -10px; background-color: #222;}
+#title .title-link a:hover {color: #ccc;}
 #menu { margin: -42px 0 0 0 }
-#menu li { list-style:none; float: left; margin: 5px 100px 5px 0px; font-size:1.5em; }
+#menu li { list-style:none; float: left; margin: 5px 50px 5px 0px; font-size:1.5em; }
 #page { margin: 100px 0; }
 /* sidebars */
 .aside { }
 .aside h1 { margin: 5px 5px 10px 0 }
 .aside a:hover { color: #a8332f; }
-#sidebar { padding-left: 80px; text-align: center; margin: 160px 0px 80px 0px; background-color: #111;}
+#sidebar { padding-left: 110px; text-align: center; margin: 160px 0px 80px 0px; background-color: #111;}
 #player { background-color: transparent; height: 100px; margin: 15px 0; width: 200px; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; }
 #links li { margin: 5px 0 }
 #newsletter { margin-top: 30px 0; }
