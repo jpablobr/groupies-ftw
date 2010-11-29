@@ -1,0 +1,11 @@
+<div id="guestbook">
+	{{#mess}}
+		<div>
+			<h1>{{name}}</h1>
+			{{{text}}}
+		</div>
+	{{/mess}}
+	{{^mess}}
+    No messages yet.
+	{{/mess}}
+</div>

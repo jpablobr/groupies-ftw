@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  <div class="block" id="forms">
+    <fieldset>
+      <legend>
+        {% if parent_id %}
+        <a aria-disabled="false" role="button" href="/admin/list/{{model}}" class="uibutton ui-icon-gear ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon"><span class="ui-icon ui-icon ui-icon-circle-arrow-w"></span><span class="ui-button-text">Go Back</span></a>
+        {% else %}
+        <a aria-disabled="false" role="button" href="/admin/list/{{model}}" class="uibutton ui-icon-gear ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon"><span class="ui-icon ui-icon ui-icon-circle-arrow-w"></span><span class="ui-button-text">Go Back</span></a>
+
+        {% endif %}
+      </legend>
+      {{ form }}
+    </fielset>
+  </div>
+
+{{ files }}
+
+<div class="clear"></div>
+
+{% endblock %}

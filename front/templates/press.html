@@ -1,0 +1,20 @@
+<ul id="articles" class="menu">
+{{#articles}}
+		<li><a href="#/press/{{id}}">{{title}}</a></li>
+{{/articles}}
+</ul>
+
+<div id="article" class="side">
+{{#article}}
+	<h1>{{title}}</h1>
+	{{{text}}}
+	<div>
+		<a href="{{img_big}}"><img src="{{img}}"></a>
+	</div>
+{{/article}}
+{{^article}}
+	No article yet.
+{{/article}}
+</div>
+
+<div id="press-background" class="pages-background"></div>

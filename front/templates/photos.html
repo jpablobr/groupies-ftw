@@ -1,0 +1,23 @@
+<ul id="photos" class="nav">
+{{#photos}}
+		<li><a href="#/photos/{{id}}"><img src="{{img}}" /></a></li>
+{{/photos}}
+</ul>
+
+<div id="photo" class="below">
+{{#photo}}
+	<h1>{{title}}</h1>
+	<h2>{{concert}} | Par {{credits}}</h2>
+	
+	<div>
+	{{#photos}}
+		<a class="photo" href="{{url_big}}" rel='lightbox'><img src="{{url}}" /></a>
+	{{/photos}}
+	</div>
+{{/photo}}
+{{^photo}}
+    No photos yet.
+{{/photo}}
+</div>
+
+<div id="photo-background" class="pages-background"></div>

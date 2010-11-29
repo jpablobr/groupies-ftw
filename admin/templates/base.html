@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+	<title>Administration | Groupies FTW</title>
+	
+	<!-- <link rel="stylesheet" href="/static/admin/main.css" type="text/css" media="screen" charset="utf-8"> -->
+    <link rel="stylesheet" type="text/css" href="/static/admin/css/reset.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/static/admin/css/text.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/static/admin/css/grid.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/static/admin/css/layout.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/static/admin/css/nav.css" media="screen" />
+	<link href="/static/admin/css/CKEditor.css" rel="stylesheet" type="text/css" />
+    <!--[if IE 6]><link rel="stylesheet" type="text/css" href="/static/admin/css/ie6.css" media="screen" /><![endif]-->
+    <!--[if IE 7]><li`nk rel="stylesheet" type="text/css" href="/static/admin/css/ie.css" media="screen" /><![endif]-->
+    <link type="text/css" href="/static/admin/css/aristo/jquery-ui-1.8.5.custom.css" rel="stylesheet" />	
+
+	<script type="text/javascript" src="/static/admin/js/ckeditor/ckeditor.js"></script>
+	<script type="text/javascript" src="/static/admin/js/ckeditor/groupies-ckeditor.js"></script>
+    <!-- <link href='http://fonts.googleapis.com/css?family=Neucha&subset=latin' rel='stylesheet' type='text/css'> -->
+    <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz&subset=latin' rel='stylesheet' type='text/css'>
+
+  </head>
+  <body>
+    <div class="container_16">
+      <div class="grid_16">
+        <h1 id="branding">
+          <a href="/#home">Groupies FTW</a>          
+        </h1>
+      </div>
+
+      <div class="clear"></div>
+      <div class="grid_16">
+        {% block menu %}
+        <ul  class="nav main">
+          {% for m in menu %}
+          <li><a href="/admin/list/{{m}}">{{m}}</a></li>
+          {% endfor %}
+        </ul><!-- nav main -->
+        {% endblock%}
+      </div>  
+
+      <div class="clear"></div>
+
+        <div class="grid_16">
+      <div id="rock-background">
+          <div class="grid_10">
+            {% block content %}
+            {% endblock %}
+          </div>
+          <!-- <img class="king-groupies" src="/static/admin/img/king-groupies.jpg" alt="King Groupies" /> -->
+        </div>
+      </div>
+
+      <div class="clear"></div>
+      <div class="grid_16" id="site_info">
+        <div class="box">
+          <p>Groupies FTW <a href="http://jpablobr.com"> by Jose Pablo Barrantes</a>. Released under <a href="http://www.opensource.org/licenses/mit-license.php">MIT</a></p>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div><!--container_16 -->
+    <script type="text/javascript" src="/static/admin/js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="/static/admin/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="/static/admin/js/jquery-fluid16.js"></script>
+    <script type="text/javascript" src="/static/admin/js/groupies-ftw.js"></script>
+  </body>
+</html>

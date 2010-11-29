@@ -1,0 +1,14 @@
+<p>
+  <label for="{{name}}">{{title}}</label>
+  <textarea cols="80" id="editor_kama" rows="10" name="{{name}}">{{default}}</textarea>
+  <script type="text/javascript">
+    //<![CDATA[
+
+    CKEDITOR.replace( 'editor_kama',
+    {
+    skin : 'kama'
+    });
+
+    //]]>
+  </script>
+</p>

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+Models
+
+<ul>
+{% for model in models %}
+	<li><a href="/admin/list/{{ model.name }}">{{ model.name }}</a></li>
+{% endfor %}
+</ul>
+
+{% endblock %}

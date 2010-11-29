@@ -1,0 +1,18 @@
+{{#news}}
+	<h1>{{title}}</h1>
+	{{{text}}}
+{{/news}}
+{{^news}}
+	Groupies FTW
+{{/news}}
+
+<ul id="contact">
+{{#contacts}}
+	<li>
+		<span class="title">{{title}}</span>
+		<span class="name">{{name}}</span>
+		<span class="phone">{{phone}}</span>
+		<a href="mailto:{{email}}" class="email">{{email}}</a>
+	</li>			
+{{/contacts}}
+</ul>

@@ -1,0 +1,19 @@
+<form action="{{action}}" method="post">
+
+  {% if errors %}
+  <div class="ui-widget">
+    <div style="padding: 0pt 0.7em;" class="ui-state-error ui-corner-all"> 
+      <p><span style="float: left; margin-right: 0.3em;" class="ui-icon ui-icon-alert"></span> 
+      <strong>Error:</strong> {{ errors }}</p>
+    </div>
+  </div>
+  {% endif %}
+
+  {{ fields }}
+  
+  </input type="hidden" name="id" value="{{ id }}">
+  
+  <button type="submit">Modifier</button>
+</form>
+
+{{refs}}

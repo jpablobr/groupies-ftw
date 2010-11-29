@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Groupies FTW</title>
+	
+	<script src="/static/front/js/jquery-1.4.2.min.js" type="text/javascript" charset="utf-8"></script>
+	
+</head>
+<body>
+	<style type="text/css" media="all">
+		* {margin: 0; padding: 0;}
+		
+		body {background-color: #000; color: #eee; font: 16px "Lucida Grande", "Lucida Sans Unicode", sans-serif; overflow: hidden;}
+		
+		#content {margin: 0 auto; position: relative; text-align: center; width: 450px; z-index: 1;}
+		
+		#title {height: 141px; margin: 20px auto; width: 300px;}
+		
+		.background {height: 800px; position: absolute; top: 0; z-index: -1;}
+		#back-left { left: -280px; width: 514px;}
+		#back-right { right: -280px; width: 501px;}
+		
+		#count {font-weight: bold; font-size: 2em; margin: 10px 0;}
+		
+		#contact {margin-top: 200px;}
+		a {color: #fff; text-decoration: none;}
+	</style>
+	
+	<script type="text/javascript" charset="utf-8">
+		function addzero(n) {
+			return (n < 10) ? '0'+n : n;
+		}
+		
+		function countdown() {
+			today = new Date();
+			target = new Date("December 02, 2010");
+			msPerDay = 24 * 60 * 60 * 1000 ;
+			timeLeft = (target.getTime() - today.getTime());
+			e_daysLeft = timeLeft / msPerDay;
+			daysLeft = Math.floor(e_daysLeft);
+			e_hrsLeft = (e_daysLeft - daysLeft)*24;
+			hrsLeft = Math.floor(e_hrsLeft);
+			e_minsLeft = (e_hrsLeft - hrsLeft)*60;
+			minsLeft = Math.floor(e_minsLeft);
+			secsLeft = Math.floor((e_minsLeft - minsLeft)*60);	
+			
+			togo = 'Still left...<div id="count">';
+			togo += addzero(daysLeft)+' days<br /> '+addzero(hrsLeft)+':'+addzero(minsLeft)+':'+addzero(secsLeft);
+			togo += '</div><strong>Groupies FTW</strong>';
+			
+			$('#counter').html(togo);
+		}
+		
+		$(function() {
+			countdown();
+			setInterval("countdown()", 1000);
+		});
+	</script>
+		
+	<div id="content">
+		<div id="title"></div>
+		<div id="counter"></div>
+		
+		<div id="contact">
+			<a href="http://github.com/jpablobr/groupies-ftw">Github</a>
+		</div>
+		
+		<div id="back-left" class="background"></div>
+		<div id="back-right" class="background"></div>
+	</div>
+</body>

@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="clear"></div>
+<div class="grid_16">
+
+  <h2  id="page-heading"><a  style="display: inline-block;" class="ui-icon ui-icon-circle-plus" href="/admin/edit/{{model}}"></a> Add {{model}} </h2>
+
+</div>
+
+<div class="clear"></div>
+
+<div class="box">
+  <ol class="steps">
+    {% for f in fields %}
+    {{f.namea}}
+    {% endfor %}    
+    {% for item in items %}
+    {% for field in item.fields %}
+    <li class="{{model}}">
+      {{ field }}
+      <div class="crud-actions {{model}}">
+        <a class="uibutton ui-icon-gear ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon" href="/admin/edit/{{model}}/?id={{item.id}}" role="button" aria-disabled="false"><span class="ui-button-icon-primary ui-icon ui-icon-wrench"></span><span class="ui-button-text">Edit</span></a>
+
+        <a class="uibutton ui-icon-gear ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon" href="/admin/delete/{{model}}/?id={{item.id}}" role="button" aria-disabled="false"><span class="ui-icon ui-icon-circle-close"></span><span class="ui-button-text">Delete</span></a>
+      </div>
+    </li>
+    {% endfor %}
+    {% endfor %}
+  </ol>
+</div>
+
+{% endblock %}

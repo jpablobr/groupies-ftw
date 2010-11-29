@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Trip in</title>
+    <link rel="stylesheet" type="text/css" href="/static/front/css/reset.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/static/front/css/text.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/static/front/css/grid.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/static/front/css/layout.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/static/front/css/nav.css" media="screen" />
+    <!--[if IE 6]><link rel="stylesheet" type="text/css" href="/static/front/css/ie6.css" media="screen" /><![endif]-->
+    <!--[if IE 7]><li`nk rel="stylesheet" type="text/css" href="/static/front/css/ie.css" media="screen" /><![endif]-->
+    <link type="text/css" href="/static/front/css/aristo/jquery-ui-1.8.5.custom.css" rel="stylesheet" />	
+    <link href='http://fonts.googleapis.com/css?family=Lobster&subset=latin' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/static/front/css/jquery.lightbox-0.5.css" type="text/css" media="all" charset="utf-8">
+  </head>
+  <body>
+    <div id="header"> 
+      <h1 id="band-name" class="grid_6">+ 1 for reading</h1> 
+      <div id="player-header">
+        <object type="application/x-shockwave-flash" data="/static/player_multi.swf" id="player">
+          <param name="movie" value="player_multi.swf" />
+          <param name="FlashVars" value="{{{player}}}&amp;config=/static/front/player.txt" />
+        </object>
+      </div>
+    </div>
+
+    <div class="container_16">
+      <div class="clear"></div>
+      <!-- player & aside -->
+      <div id="sidebar" class="aside grid_3">
+
+        <div id="agenda" class="agenda">
+          <h1>Events</h1>      
+          <ul>
+            {{#agenda}}
+            <li>
+              <div class="place"><a href="#">{{place}}</a></div>
+              <div class="title infos">{{title}}</div>
+              <div class="date infos">{{date}}</div>
+            </li>
+            {{/agenda}}
+            <li><a href="#/agenda" class="all">See all events</a></li>
+          </ul>		
+        </div><!-- agenda -->
+        
+        <ul id="links">
+          {{#links}}
+          <li><a href="{{link}}">{{title}}</a></li>
+          {{/links}}
+        </ul>
+        
+        <form action="/newsletter" method="get" id="newsletter">
+          <input type="text" name="email" placeholder='email' />
+          <button type="submit">Sign up for the newsletter</button>
+          <span id="confirm"></span>
+        </form>
+        
+        <a href="#/guestbook/new" id="guestbook_link">Leave us a message</a>
+        <a href="#/guestbook" class="small block">See All Posts form Guests</a>
+        
+        <form action="guestbook" id="guestbook_form" method="post">
+          <input type="text" name="name" placeholder="Nom">
+            <textarea name="text"></textarea>
+            <button type="submit">Send</button>
+          </form>		
+
+        </div><!-- sidebar -->
+
+        <div  class="grid_10">
+          <div id="content">
+            <div id="title"> <h1>Groupies FTW</h1></div>
+            
+            <ul id="menu">
+              <li><a href="#/home">Home</a></li>
+              <li><a href="#/bio">Biography</a></li>
+              <li><a href="#/music">Music</a></li>
+              <li><a href="#/media">Media</a></li>
+            </ul>
+            
+            <!-- main content -->
+            <div id="page"><center>Groupies FTW!</center></div>
+          </div><!-- content -->
+        </div><!-- grid_10 -->
+
+      </div> <!-- container -->
+    <div id="footer"></div>
+    <script src="/static/front/js/ext/jquery-1.4.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/static/admin/js/jquery-ui.js" type="text/javascript" ></script>
+    <script src="/static/admin/js/jquery-fluid16.js" type="text/javascript" ></script>
+    <script src="/static/front/js/ext/jquery.hashlisten.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/static/front/js/ext/mustache.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/static/front/js/ext/jquery.lightbox-0.5.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/static/front/js/app.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
