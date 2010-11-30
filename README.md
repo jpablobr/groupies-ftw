@@ -26,22 +26,22 @@ Most importantly a look and feel that matches your style! Get it? Beyond that, I
 
 ### Installation instructions:
 
-* [Install Google Appengine](http://code.google.com/appengine/downloads.html#Google_App_Engine_SDK_for_Python)
+[Install Google Appengine](http://code.google.com/appengine/downloads.html#Google_App_Engine_SDK_for_Python)
   
 Type: 
-          
-    `% git clone http://github.com/jpablobr/groupies-ftw.git`
+
+`% git clone http://github.com/jpablobr/groupies-ftw.git`
     
-    `% cd groupies-ftw`
+`% cd groupies-ftw`
     
-    `% dev_appserver.py .`
+`% dev_appserver.py .`
     
 And visit: [http://localhost:8080](http://localhost:8080) and you’re done... SRSLY!
 
 
 ### Deploying
 
-    `% appcfg.py update .`
+`% appcfg.py update .`
 
 If this is the first app you deploy to the Google appengine just follow the prompts... and thats it! 
 
