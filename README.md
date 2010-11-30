@@ -1,6 +1,6 @@
 # Groupies FTW
 
-This is a simple content management system Python app meant to help musician organise their "thing" much better.
+This is a simple content management system using the [Python Google Appengine](http://code.google.com/appengine) meant to help musician organise their "thing" much better.
 
 This CMS, provides the ultimate interactive, multi-user website solution for musicians, or soloist. It gives visitors an interactive experience that helps them connect with you and your music.
 
@@ -49,7 +49,7 @@ And visit: [http://youapp.appstore.com](#)
 
 ### TODOS
 
-* Test!
+* Tests!
 * A full-featured shopping cart, which can facilitate the sale of CDs, shirts, other merchandise, and even music downloads.
 * Create a special "insiders" section only registered users or fan club members have access to
 * Set up a blog for band members so they can add to the blog directly without having to go through the webmaster.
