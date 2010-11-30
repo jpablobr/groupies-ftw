@@ -1,20 +1,22 @@
-<ul id="albums" >
+<div class="albums-nav">
+  <ul id="albums" >
 	{{#albums}}
-		<li><a href="#/music/{{id}}"><img src="{{artwork}}"></a></li>
+    <li><a href="#/music/{{id}}"><img src="{{artwork}}"></a></li>
 	{{/albums}}
-</ul>
+  </ul>
+</div>
 
 <div id="album" class="below">
-	{{#album}}
-		<img src="{{artwork}}">
-		<h1 class="title">{{title}}</h1>
-		<ul>
-		{{#songs}}
-			<li>{{track}}. {{title}}</li>
-		{{/songs}}
-		</ul>
+  {{#album}}
+  <img src="{{artwork}}">
+    <h1 class="title">{{title}}</h1>
+    <ul>
+      {{#songs}}
+      <li>{{track}}. {{title}}</li>
+      {{/songs}}
+    </ul>
 	{{/album}}
 	{{^album}}
-		No albums yet.
+    No albums yet.
 	{{/album}}
-</div>
+  </div>

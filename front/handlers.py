@@ -136,7 +136,7 @@ class MusicHandler(AppHandler):
             return False
         albumd = utils.to_dict(album)
         try:
-            albumd['artwork'] = images.get_serving_url(albumd['artwork'], 200)
+            albumd['artwork'] = images.get_serving_url(albumd['artwork'], 288)
         except images.BlobKeyRequiredError:
             albumd['artwork'] = ''
         albumd['songs'] = self.songs(album)
@@ -166,7 +166,7 @@ class PhotosHandler(AppHandler):
         photosd = utils.to_dicts(photos)
         for item in photosd:
             item['photos'] = []
-            item['img'] = images.get_serving_url(item['img'], 80, True)
+            item['img'] = images.get_serving_url(item['img'], 144, True)
         return photosd
     
     def photo(self, id):
