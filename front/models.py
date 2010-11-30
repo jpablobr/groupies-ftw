@@ -15,6 +15,7 @@ class ImageReferenceProperty(blobstore.BlobReferenceProperty):
 class Biography(db.Model):
     text = db.TextProperty('Biography')
     artwork = ImageReferenceProperty('Artwork')
+    title = db.StringProperty('Title')
     
 class Album(db.Model):
     title = db.StringProperty('Title')

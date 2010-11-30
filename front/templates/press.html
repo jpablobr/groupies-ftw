@@ -1,17 +1,18 @@
-<ul id="articles" class="menu">
-{{#articles}}
-		<li><a href="#/press/{{id}}">{{title}}</a></li>
-{{/articles}}
-</ul>
-
-<div id="article" class="side">
+<div id="article" class="media-press grid_10">
 {{#article}}
 	<h1>{{title}}</h1>
+    <div class="clear"></div>
 	{{{text}}}
 {{/article}}
 {{^article}}
 	No article yet.
 {{/article}}
 </div>
+
+<ul id="articles" class="menu">
+{{#articles}}
+		<li><a href="#/press/{{id}}">{{title}}</a></li>
+{{/articles}}
+</ul>
 
 <div id="press-background" class="pages-background"></div>

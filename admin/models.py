@@ -92,7 +92,7 @@ class AdminModel:
 
 # User classes
 class Biography(AdminModel):
-    pass
+    show = ['title']
 
 class Album(AdminModel):
     show = ['title']

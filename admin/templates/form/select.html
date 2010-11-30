@@ -1,9 +1,9 @@
 <p>
-	<label for="{{name}}">{{title}}</label>
-	<select name="{{name}}">
-		<option value=""></option>
+  <label for="{{name}}"><h1>{{title}}</h1></label>
+  <select name="{{name}}">
+    <option value=""></option>
 	{% for opt in options %}
-		<option value="{{opt.key}}" {{opt.selected}}>{% if opt.title %}{{opt.title}}{% else %}{{opt.name}}{% endif %}</option>
+    <option value="{{opt.key}}" {{opt.selected}}>{% if opt.title %}{{opt.title}}{% else %}{{opt.name}}{% endif %}</option>
 	{% endfor %}
-	</select>
+  </select>
 </p>
