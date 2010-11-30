@@ -23,7 +23,6 @@ class Album(db.Model):
 class Article(db.Model):
     title = db.StringProperty('Title')
     text = db.TextProperty('Text')
-    img = ImageReferenceProperty('Image')
 
 class Player(db.Model):
     title = db.StringProperty('Title')

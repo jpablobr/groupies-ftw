@@ -226,7 +226,6 @@ class PressHandler(AppHandler):
         itemsd = utils.to_dicts(items)
         for item in itemsd:
             item['text'] = ''
-            item['img'] = ''
         return itemsd
 
     def article(self, id):
@@ -237,9 +236,6 @@ class PressHandler(AppHandler):
         if not item:
             return False
         itemd = utils.to_dict(item)
-        key = itemd['img']
-        itemd['img'] = images.get_serving_url(key, 200)
-        itemd['img_big'] = images.get_serving_url(key, 1024)
         return itemd
 
 

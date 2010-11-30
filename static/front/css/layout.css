@@ -1,7 +1,7 @@
 /*
 Jose Pablo Barrantes
 ----------------------------------------------- */
-body { background: #fff; border-top: 25px solid #000; color: #222; font-size: 11px; padding: 0 0 40px; }
+body { background: #fff; border-top: 25px solid #222; color: #222; font-size: 11px; padding: 0 0 40px; }
 /* anchors
 ----------------------------------------------- */
 a { color: #ccc; font-weight: bold; text-decoration: none; }
@@ -161,19 +161,17 @@ input.search.button { width: 28%; margin-left: 2%; }
 #content { margin: 20px 0px;; text-align: center; overflow: hidden; font-size: 1.1em; }
 #title { height: 141px; margin: 20px auto; }
 /* #title h1 { font-size: 4em; margin:-30px;} */
-#title h1 {  color:#A8332F; float:left; font-size:4em; margin:0px; padding:5px;  letter-spacing: 5px;}
-#title .title-link { margin-left: -10px; background-color: #222;}
-#title .title-link a:hover {color: #ccc;}
+#title h1 {  color:#A8332F; float:left; font-size:5em; margin:0px; padding:5px;  letter-spacing: 6px;}
 #menu { margin: -42px 0 0 0 }
-#menu li { list-style:none; float: left; margin: 5px 50px 5px 0px; font-size:1.5em; }
-#page { margin: 100px 0; }
+#menu li { list-style:none; float: left; margin: 5px 90px 5px 0px; font-size:1.5em; }
+#page { margin: 80px 0; }
 /* sidebars */
 .aside { }
 .aside h1 { margin: 5px 5px 10px 0 }
 .aside a:hover { color: #a8332f; }
-#sidebar { padding-left: 170px; text-align: center; margin: 160px 0px 80px 0px; background-color: #111;}
+#sidebar { padding-left: 170px; text-align: center; margin: 160px 0px 20px 0px; background-color: #222;}
 #player { background-color: transparent; height: 100px; margin: 15px 0; width: 200px; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; }
-#links li { margin: 5px 0 }
+#links li { list-style: none; margin: 5px 0 }
 #newsletter { margin-top: 30px 0; }
 #newsletter input { display: inline; width: 150px; margin: 10px 0px;}
 #newsletter button { display: inline; width: 150px; margin: 10px 0px;}
@@ -181,13 +179,14 @@ input.search.button { width: 28%; margin-left: 2%; }
 #guestbook_link { margin: 10px auto; display: block;}
 #agenda { margin: 10px 0px;  }
 .page-agenda ul { float: left; }
-.page-agenda .agenda .title, .agenda .date { font-size:1.4em; color: #222; text-align:left;}
-.page-agenda .place {float: left; }
-.page-agenda .place a { font-size: 2em;}
+.page-agenda li { margin: 0px; list-style: none;}
+.page-agenda .agenda .title, .agenda .date { font-size:1.4em; color: #222; text-align:left; fload: left;}!important
+.page-agenda .place {float: left; margin:15px 0px; }
+.page-agenda .place a { font-size: 2em; display: block; margin: 10px 0px;}
 .agenda li {list-style:none;  margin: 10px 0; text-align: center; }
 .agenda h1 { text-align: center; color: #a8332f; }
 .agenda .place { }
-.agenda .title, .agenda .date { text-align: center; font-size:1.4em; margin:10px 0; color: #222;}
+.agenda .title, .agenda .date { text-align: center; font-size:1.4em; margin:10px 0; color: #ccc;}
 .agenda .all { }
 #logos { opacity: 0.5; position: absolute; right: 20px; top: 640px; z-index: 19; }
 #logos img { display: block; margin: 5px 0; }
@@ -197,8 +196,9 @@ input.search.button { width: 28%; margin-left: 2%; }
 #page .nav { margin: 0 0 20px 0 }
 #page .nav li { float: left; margin: 0 10px 0 0; }
 #page .menu { float: left; width: 150px; }
-#page .below { clear: left; padding: 10px 0; }
-#page .side { margin-left: 160px }
+#page .below { clear: left; padding: 33px 0; }
+#page .side { margin: 0 300px 0 170px;}
+#page .main-texts { margin: 10px 10% 0px 0px; }
 #page h1 { margin: 15px 0; text-transform: capitalize; font-size: 2em; }
 #page h2 { color: #ccc }
 #contact { border-top: 1px solid #fff; margin-top: 20px; padding: 10px 0; text-align: left; line-height: 15px; }
@@ -218,7 +218,7 @@ input.search.button { width: 28%; margin-left: 2%; }
 #photo h3 { display: inline }
 #photo div { margin-top: 20px }
 #photo a { display: block; float: left; margin: 0 10px 5px 0; }
-#guestbook { margin: 0 auto; width: 500px; }
+#guestbook {  }
 #guestbook div { margin: 20px 0 }
 /* generic classes */
 .small { margin: 15px 0px;}
@@ -226,3 +226,5 @@ input.search.button { width: 28%; margin-left: 2%; }
 #band-name { font-size: 5em; color: white;}
 #player-header {float: right; margin-top: -25px;}
 #confirm {margin: 0px; font-size: 1.5em;}
+.images-nav { }
+.images-nav li {margin: 0 10px 0 0px; padding:0px; float: left; list-style:none;  }
