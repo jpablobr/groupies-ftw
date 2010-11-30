@@ -51,6 +51,7 @@ class MainHandler(AppHandler):
             'player': self.player(),
             'links': self.links()
         })
+        # self.redirect("#/home")
     
     def player(self):
         try:
@@ -86,11 +87,6 @@ class HomeHandler(AppHandler):
         contacts = models.Contact.all().fetch(10)
         return utils.to_dicts(contacts)
     
-    def ressources(self):
-        res = models.Ressources.all().fetch(5)
-        return utils.to_dicts(res)
-
-
 class AgendaHandler(AppHandler):
     def get(self):
         self.renderjson('agenda.html', {'agenda': agenda(100)})
