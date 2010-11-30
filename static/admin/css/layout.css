@@ -158,3 +158,6 @@ input.search.button { width: 28%; margin-left: 2%; }
 #kwick .three { background: #888 }
 #kwick .four { background: #999 }
 .formspacer {margin: 20px;}
+.formspacer li { list-style: none; margin: 10px 0px;}
+.formspacer h3 { font-size:1.5em;  margin: 10px 0px;}
+.formspacer input, button {  margin: 4px 0px;}

@@ -1,7 +1,13 @@
+
 <p>
-	<label for="{{name}}">{{title}}</label>
-	<input type="file" name="{{name}}"><br />
-	{% if key %}
-		<a href="{{url}}">view</a> - <a href="/admin/deleteblob/{{model}}/?id={{id}}&key={{key}}">delete</a>
-	{% endif %}
+  <label for="{{name}}"> <h3> {{title}} </h3></label>
+  <input type="file" name="{{name}}"><br />
+  {% if key %}
+
+  <a class="uibutton ui-icon-gear ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon" href="{{url}}" role="button" aria-disabled="false"><span class="ui-button-icon-primary ui-icon ui-icon-circle-arrow-e"></span><span class="ui-button-text">view {{ model}} {{ ref.id }}</span></a>
+
+  <a class="uibutton ui-icon-gear ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon" href="/admin/deleteblob/{{model}}/?id={{id}}&key={{key}}" role="button" aria-disabled="false"><span class="ui-icon ui-icon-circle-close"></span><span class="ui-button-text">Delete</span></a>
+
+  {% endif %}
 </p>
+<br />

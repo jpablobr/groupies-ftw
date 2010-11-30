@@ -1,13 +1,17 @@
-<span class="label">{{model}}</span>
+<span class="label"><h3> Related {{model}} </h3></span>
 
 {% if refs %}
 <ul>
 {% for ref in refs %}
 	<li>
-		<a href="/admin/edit/{{model}}/?id={{ref.id}}&parent={{parent}}&parent_id={{parent_id}}">{{ ref.id }}</a> - <a href="/admin/delete/{{model}}/?id={{ref.id}}">Delete</a>
+      <a class="uibutton ui-icon-gear ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon" href="/admin/edit/{{model}}/?id={{ref.id}}&parent={{parent}}&parent_id={{parent_id}}" role="button" aria-disabled="false"><span class="ui-button-icon-primary ui-icon ui-icon-wrench"></span><span class="ui-button-text">{{ model}} {{ ref.id }}</span></a>
+
+        <a class="uibutton ui-icon-gear ui-button ui-widget ui-state-default ui-corner-all ui-button-text-icon" href="/admin/delete/{{model}}/?id={{ref.id}}" role="button" aria-disabled="false"><span class="ui-icon ui-icon-circle-close"></span><span class="ui-button-text">Delete</span></a>
+        
 	</li>
+    
 {% endfor %}
 </ul>
 {% else %}
-	Pas de {{model}}
+	No {{model}}
 {% endif %}
